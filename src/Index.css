@@ -177,6 +177,20 @@ form:before {
 .todo-container ul .todo .btn-filter .trash {
   display: none;
 }
+.todo-container ul .todo .btn-filter .edit-todo {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.todo-container ul .todo input {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 1.1rem;
+}
+.todo-container ul .todo input:focus {
+  outline: 1px solid grey;
+  border-radius: 5px;
+}
 
 .filter-btn {
   display: flex;
