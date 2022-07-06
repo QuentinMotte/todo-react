@@ -1,0 +1,61 @@
+.todo-container {
+    // padding-top: 30px;
+    border: 1px solid rgb(220, 209, 209);
+    border-top: none;
+    border-bottom: none;
+    background: rgba(128, 128, 128, 0.131);
+    box-shadow: 0 0 0;
+    @media screen and(max-width:600px) {
+        width: 370px;
+        margin: 0 auto;
+    }
+    ul {
+        .todo {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px 10px 20px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.131);
+            font-weight: 600;
+            cursor: pointer;
+
+            .completed {
+                text-decoration: line-through;
+                opacity: 0.7;
+                font-weight: 400;
+                font-style: italic;
+                &:before {
+                    content: "✔";
+                    opacity: 1;
+                }
+            }
+            .btn-filter {
+                gap: 10px;
+                display: flex;
+
+                button {
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                .complete-btn {
+                    background: rgb(116, 227, 116);
+                    padding: 3px 5px;
+                }
+                .delete-btn {
+                    background: rgb(245, 91, 91);
+                    display: none;
+                    padding: 5px;
+                }
+                .complete {
+                    display: flex;
+                }
+                .trash {
+                    display: none;
+                }
+            }
+        }
+    }
+}
