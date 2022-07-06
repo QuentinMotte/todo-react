@@ -1,5 +1,6 @@
 import "./Index.min.css";
 import React, { useState, useEffect } from "react";
+
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 import Filter from "./components/Filter";
@@ -10,6 +11,7 @@ function App() {
     const [todos, setTodos] = useState([]);
     const [status, setStatus] = useState("all");
     const [filteredTodos, setFilteredTodos] = useState([]);
+
     useEffect(() => {
         const getLocalTodos = () => {
             if (localStorage.getItem("todos") === null) {
