@@ -181,6 +181,9 @@ form:before {
   text-transform: uppercase;
   font-weight: 600;
 }
+.todo-container ul .todo .btn-filter .edit-todo:hover {
+  color: rgb(45, 205, 245);
+}
 .todo-container ul .todo input {
   border: none;
   border-radius: 5px;

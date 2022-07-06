@@ -58,6 +58,9 @@
                 .edit-todo {
                     text-transform: uppercase;
                     font-weight: 600;
+                    &:hover {
+                        color: rgb(45, 205, 245);
+                    }
                 }
             }
             input {
