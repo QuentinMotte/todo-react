@@ -22,7 +22,9 @@ const Filter = ({ setStatus, filteredTodos, setTodos, todos }) => {
             <button onClick={filterStatus} className="uncompleted">
                 Uncompleted
             </button>
-            <button onClick={deleteCompleteTodo}>Delete</button>
+            <button className="delete-one-btn" onClick={deleteCompleteTodo}>
+                Delete
+            </button>
         </div>
     );
 };

@@ -74,7 +74,7 @@ function App() {
                     todos={todos}
                 />
 
-                <NumberOfTodos filteredTodos={filteredTodos} />
+                <NumberOfTodos filteredTodos={filteredTodos} todos={todos} />
             </main>
         </div>
     );

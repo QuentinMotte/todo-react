@@ -30,11 +30,19 @@
             font-weight: 500;
         }
     }
+    .delete-one-btn {
+        &:hover {
+            color: red;
+        }
+    }
 }
 .numbers-items {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
+    flex-direction: column-reverse;
+    gap: 10px;
     p {
         letter-spacing: 1px;
     }

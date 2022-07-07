@@ -1,9 +1,11 @@
 import React from "react";
 
-const NumberOfTodos = ({ filteredTodos }) => {
+const NumberOfTodos = ({ filteredTodos, todos }) => {
     return (
         <div className="numbers-items">
             <p>{filteredTodos.length} items left</p>
+
+            <p>{todos.filter((todo) => !todo.completed).length} left todo</p>
         </div>
     );
 };

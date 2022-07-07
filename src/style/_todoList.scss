@@ -1,6 +1,7 @@
 .todo-container {
     // padding-top: 30px;
     display: flex;
+    max-width: 550px;
     flex-direction: column;
     border: 1px solid rgb(220, 209, 209);
     border-top: none;
@@ -23,11 +24,11 @@
         background: rgba(255, 0, 0, 0.3);
         margin: 0 auto;
         position: absolute;
-        bottom: -160px;
+        bottom: -200px;
         left: 50%;
         transform: translate(-50%);
         &:hover {
-            transform: scale(1.1) translate(-50%);
+            transform: translate(-50%) scale(1.1);
             color: red;
             background: rgb(242, 242, 242);
             font-weight: 500;
@@ -41,7 +42,7 @@
             border-bottom: 1px solid rgba(128, 128, 128, 0.131);
             font-weight: 600;
             cursor: pointer;
-
+            max-width: 550px;
             .completed {
                 text-decoration: line-through;
                 opacity: 0.7;
@@ -51,6 +52,10 @@
                     content: "✔";
                     opacity: 1;
                 }
+            }
+            .todo-item {
+                max-width: 400px;
+                word-wrap: break-word;
             }
             .btn-filter {
                 gap: 10px;
