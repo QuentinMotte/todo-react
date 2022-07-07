@@ -4,11 +4,10 @@ const Todo = ({ todos, setTodos, text, todo }) => {
     const [todoEditing, setTodoEditing] = React.useState(null);
     const [editingText, setEditingText] = React.useState("");
     const deleteTodo = () => {
-        if (todo.completed === true) {
-            setTodos(todos.filter((el) => el.id !== todo.id));
-        }
-        // console.log(todo);
+        setTodos(todos.filter((todo) => !todo.completed));
     };
+
+    // console.log(todo);
 
     const completeTodo = () => {
         setTodos(

@@ -1,13 +1,37 @@
 .todo-container {
     // padding-top: 30px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgb(220, 209, 209);
     border-top: none;
     border-bottom: none;
     background: rgba(128, 128, 128, 0.131);
     box-shadow: 0 0 0;
+    position: relative;
     @media screen and(max-width:600px) {
         width: 370px;
         margin: 0 auto;
+    }
+    .delete-all {
+        width: 150px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        font-weight: 600;
+        background: rgba(255, 0, 0, 0.3);
+        margin: 0 auto;
+        position: absolute;
+        bottom: -160px;
+        left: 50%;
+        transform: translate(-50%);
+        &:hover {
+            transform: scale(1.1) translate(-50%);
+            color: red;
+            background: rgb(242, 242, 242);
+            font-weight: 500;
+        }
     }
     ul {
         .todo {
